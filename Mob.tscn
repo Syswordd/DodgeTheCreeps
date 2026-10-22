@@ -28,7 +28,7 @@ animations = [ {
 
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 36.0
-height = 26.0
+height = 8.00001
 
 [node name="Mob" type="RigidBody2D" groups=["mobs"]]
 collision_mask = 0
@@ -41,6 +41,7 @@ frames = SubResource( 1 )
 animation = "walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 9, 0 )
 rotation = 1.5708
 shape = SubResource( 2 )
 
